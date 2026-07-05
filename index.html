@@ -67,7 +67,7 @@
   .btn-wa:hover{background:#1ebe5d;}
 
   /* HERO */
-  .hero{position:relative;padding:88px 28px 64px;background:radial-gradient(circle at 85% 10%, rgba(230,0,126,0.30), transparent 45%), var(--deep-teal);color:#fff;overflow:hidden;}
+  .hero{position:relative;padding:88px 28px 64px;background:linear-gradient(135deg,rgba(26,14,46,0.88) 0%,rgba(54,26,70,0.75) 60%,rgba(230,0,126,0.30) 100%), url('img/kantor.png') center/cover no-repeat;color:#fff;overflow:hidden;}
   .hero::before{content:"";position:absolute;inset:0;background-image:repeating-radial-gradient(circle at 50% 120%, transparent 0, transparent 60px, rgba(255,255,255,0.045) 61px, rgba(255,255,255,0.045) 62px);pointer-events:none;}
   .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;max-width:1160px;margin:0 auto;}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--signal-soft);background:rgba(230,0,126,0.16);border:1px solid rgba(230,0,126,0.35);padding:6px 14px;border-radius:100px;margin-bottom:22px;}
@@ -213,6 +213,7 @@
     .bundle-grid,.lt-grid,.kelebihan,.area-list{grid-template-columns:1fr;}
     .coverage{grid-template-columns:1fr;}
     table.price-table{font-size:12.5px;}
+    .map-grid{grid-template-columns:1fr !important;}
   }
   @media (max-width:420px){
     .hero{padding:64px 18px 48px;}
@@ -657,7 +658,7 @@
           <div class="flow-num">1</div>
           <div class="flow-text">
             <h3>Bayar lewat Virtual Account, mitra resmi, atau aplikasi online</h3>
-            <p><b>Bank:</b> Mandiri, BCA, Danamon, CIMB Niaga, Permata. &nbsp; <b>Mitra resmi:</b> Indomaret, Alfamart, Alfamidi, Dan+Dan, Lawson Station. &nbsp; <b>Aplikasi:</b> Go Tagihan, Dana, Tokopedia, Shopee, Bukalapak, Sepulsa.</p>
+            <p><b>Bank VA:</b> Mandiri, BCA, Danamon, CIMB Niaga, Permata. &nbsp; <b>Mitra resmi:</b> Indomaret, Alfamart, Alfamidi, Dan+Dan, Lawson Station. &nbsp; <b>Aplikasi:</b> Go Tagihan, Dana, Tokopedia, Shopee, Bukalapak, Sepulsa.</p>
           </div>
         </div>
         <div class="flow-step">
@@ -727,6 +728,55 @@
         <div><b>Palangka Raya Kota</b><span class="ok">TERSEDIA</span></div>
         <div><b>Sebangau</b><span class="ok">TERSEDIA</span></div>
         <div><b>Pahandut</b><span class="ok">TERSEDIA</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOKASI KANTOR -->
+<section class="section" style="background:#fff;padding-top:56px;padding-bottom:56px;">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:28px;">
+      <div class="sec-eyebrow">Lokasi Kami</div>
+      <h2>XL Center Palangka Raya</h2>
+      <p>Kunjungi kami langsung untuk konsultasi, pendaftaran, atau pembayaran tagihan.</p>
+    </div>
+    <div class="map-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;">
+      <!-- Info kantor -->
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="background:var(--mist);border-radius:16px;padding:20px 22px;display:flex;gap:14px;align-items:flex-start;">
+          <div style="font-size:22px;">📍</div>
+          <div>
+            <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Alamat</div>
+            <div style="font-size:14px;color:#4d5e62;line-height:1.6;">Jl. Cilik Riwut Km.1<br>Palangka Raya, Kalimantan Tengah</div>
+          </div>
+        </div>
+        <div style="background:var(--mist);border-radius:16px;padding:20px 22px;display:flex;gap:14px;align-items:flex-start;">
+          <div style="font-size:22px;">🕘</div>
+          <div>
+            <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Jam Operasional</div>
+            <div style="font-size:14px;color:#4d5e62;line-height:1.6;">Senin – Jumat: 08.00 – 17.00<br>Sabtu: 08.00 – 14.00<br>Minggu & Hari Libur: Tutup</div>
+          </div>
+        </div>
+        <div style="background:var(--mist);border-radius:16px;padding:20px 22px;display:flex;gap:14px;align-items:flex-start;">
+          <div style="font-size:22px;">💬</div>
+          <div>
+            <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Atau Chat Dulu</div>
+            <a href="https://wa.me/6285967119694" target="_blank" rel="noopener noreferrer" style="font-size:14px;color:var(--river);font-weight:600;text-decoration:none;">0859 6711 9694 →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Google Maps embed -->
+      <div style="border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(26,14,46,0.10);min-height:300px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.0!2d113.911334!3d-2.200134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLTIuMjAwMTM0LDExMy45MTEzMzQ!5e0!3m2!1sid!2sid!4v1700000000001!5m2!1sid!2sid"
+          width="100%" height="320"
+          style="border:0;display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Lokasi XL Center Palangka Raya">
+        </iframe>
       </div>
     </div>
   </div>
