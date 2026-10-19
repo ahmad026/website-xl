@@ -200,6 +200,37 @@
   .lt-card .save{margin-top:12px;background:rgba(230,0,126,0.18);border-radius:10px;padding:10px;font-size:12.5px;color:var(--signal-soft);}
   .lt-card .save b{display:block;color:#fff;font-size:18px;font-family:'Space Grotesk';}
 
+  /* SEGERA HADIR — XL Satu FWA */
+  .soon{background:var(--deep-teal);color:#fff;position:relative;overflow:hidden;}
+  .soon::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 0%,rgba(230,0,126,0.28),transparent 45%),radial-gradient(circle at 0% 100%,rgba(54,84,224,0.30),transparent 50%);pointer-events:none;}
+  .soon .wrap{position:relative;}
+  .soon .sec-head h2{color:#fff;}
+  .soon .sec-head p{color:rgba(255,255,255,0.7);}
+  .soon-badge{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#fff;background:var(--xls-grad);padding:7px 16px;border-radius:100px;margin-bottom:16px;}
+  .soon-badge .dot-live{background:#fff;}
+  .soon-award{display:inline-block;margin-top:14px;font-size:12.5px;color:rgba(255,255,255,0.75);border:1px solid rgba(255,255,255,0.2);border-radius:100px;padding:6px 14px;}
+  .soon-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:20px;}
+  .soon-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-radius:18px;padding:26px;}
+  .soon-card .lbl{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--signal-soft);margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;}
+  .soon-card .lbl span{background:var(--signal);color:#fff;font-size:10.5px;padding:3px 9px;border-radius:100px;letter-spacing:0.04em;}
+  .soon-speed{font-family:'Space Grotesk';font-size:56px;font-weight:700;line-height:1;}
+  .soon-speed small{font-size:18px;color:rgba(255,255,255,0.6);margin-left:4px;}
+  .soon-price{margin-top:18px;background:#fff;color:var(--ink);border-radius:12px;padding:14px 16px;display:flex;justify-content:space-between;align-items:baseline;}
+  .soon-price span{font-size:12.5px;color:#5a6a6d;}
+  .soon-price b{font-family:'Space Grotesk';font-size:24px;}
+  .soon-once{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .soon-once .opt{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:16px;}
+  .soon-once .opt.best{border-color:var(--signal);}
+  .soon-once .sp{font-family:'Space Grotesk';font-size:28px;font-weight:700;}
+  .soon-once .sp small{font-size:13px;color:rgba(255,255,255,0.6);margin-left:3px;}
+  .soon-once s{display:block;font-size:12.5px;color:rgba(255,255,255,0.5);margin-top:6px;}
+  .soon-once .now{font-family:'Space Grotesk';font-size:22px;font-weight:700;}
+  .soon-once .eq{font-size:12px;color:var(--signal-soft);margin-top:2px;}
+  .soon-perks{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
+  .soon-perks span{font-size:12px;background:rgba(230,0,126,0.18);color:var(--signal-soft);padding:5px 11px;border-radius:100px;}
+  .soon-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-top:24px;}
+  .soon-foot p{font-size:13px;color:rgba(255,255,255,0.6);max-width:520px;}
+
   /* CARA PASANG */
   .flow{position:relative;}
   .flow-line{position:absolute;left:23px;top:14px;bottom:14px;width:2px;background:repeating-linear-gradient(to bottom, var(--river) 0 6px, transparent 6px 12px);}
@@ -241,7 +272,7 @@
     .nav-links{display:none;}
     .wa-num{display:none;}
     .hero-inner{grid-template-columns:1fr;}
-    .bundle-grid,.lt-grid,.kelebihan,.area-list{grid-template-columns:1fr;}
+    .bundle-grid,.lt-grid,.kelebihan,.area-list,.soon-grid{grid-template-columns:1fr;}
     .coverage{grid-template-columns:1fr;}
     table.price-table{font-size:12.5px;}
     .map-grid{grid-template-columns:1fr !important;}
@@ -256,6 +287,8 @@
     .cta-band{padding:32px 22px;flex-direction:column;align-items:flex-start;}
     .tabs{gap:8px;}
     .tab-btn{font-size:12.5px;padding:9px 16px;}
+    .soon-card{padding:20px;}
+    .soon-once{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -266,6 +299,7 @@
     <div class="logo">XL<span>PALANGKARAYA</span></div>
     <div class="nav-links">
       <a href="#paket">Paket</a>
+      <a href="#segera-hadir">Segera Hadir</a>
       <a href="#promo">Promo</a>
       <a href="#pasang">Cara Pasang</a>
       <a href="#billing">Tagihan</a>
@@ -527,6 +561,50 @@
         <div class="kel-item"><div class="ico">✓</div><p>Personalized Premium Number — bisa pilih nomor cantik sesuai keinginan.</p></div>
       </div>
       <p class="note-strip">*Syarat dan ketentuan berlaku.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SEGERA HADIR: XL SATU FWA -->
+<section class="section soon" id="segera-hadir">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="soon-badge"><span class="dot-live"></span> Coming Soon</div>
+      <h2>XL Satu FWA — WiFi rumah tanpa kabel.</h2>
+      <p>Fixed Wireless Access: internet rumah lewat sinyal nirkabel yang kuat dan stabil, tanpa tarik kabel ke rumah. Segera hadir di Palangka Raya. Harga sudah termasuk PPN.</p>
+      <div class="soon-award">Opensignal Fixed Broadband Experience Awards, April 2026</div>
+    </div>
+
+    <div class="soon-grid">
+      <div class="soon-card">
+        <div class="lbl">Paket Bayar Bulanan <span>Best Seller</span></div>
+        <div class="soon-speed">100<small>Mbps</small></div>
+        <div class="soon-price"><span>Harga paket</span><b>Rp243rb/bln</b></div>
+      </div>
+
+      <div class="soon-card">
+        <div class="lbl">Sekali Bayar 4 Bulan <span>Hemat hingga 40%*</span></div>
+        <div class="soon-once">
+          <div class="opt">
+            <div class="sp">50<small>Mbps</small></div>
+            <s>Rp1.085.000</s>
+            <div class="now">Rp721.000</div>
+            <div class="eq">Setara Rp180.250/bulan</div>
+          </div>
+          <div class="opt best">
+            <div class="sp">100<small>Mbps</small></div>
+            <s>Rp1.161.000</s>
+            <div class="now">Rp876.000</div>
+            <div class="eq">Setara Rp219.000/bulan</div>
+          </div>
+        </div>
+        <div class="soon-perks"><span>Bonus nonton 3 bulan</span><span>Vidio Lite</span><span>CATCHPLAY+</span></div>
+      </div>
+    </div>
+
+    <div class="soon-foot">
+      <p>Produk belum bisa dipesan. Daftarkan minat kamu sekarang, kami kabari begitu XL Satu FWA tersedia di area kamu.</p>
+      <a href="https://wa.me/6285967119694?text=Halo%2C%20saya%20tertarik%20dengan%20XL%20Satu%20FWA.%20Tolong%20kabari%20saya%20saat%20sudah%20tersedia." target="_blank" rel="noopener noreferrer" class="btn-primary">Kabari Saya via WhatsApp →</a>
     </div>
   </div>
 </section>
